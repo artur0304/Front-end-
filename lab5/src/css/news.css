@@ -1,0 +1,21 @@
+.news-box {
+  border: 1px solid #000000;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 1px rgb(29, 29, 29);
+}
+
+.news-box > h3 {
+  font: 18pt/18pt sans-serif;
+}
+
+.news-box > p {
+  font: 12pt/10pt sans-serif;
+  margin-bottom: 10px;
+  letter-spacing: 1.2px;
+  line-height: 20px;
+}
+
+.news-box > a {
+  font: 10pt/8pt sans-serif;
+}

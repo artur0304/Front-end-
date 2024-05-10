@@ -1,0 +1,15 @@
+.p-font {
+  font: 12pt/10pt sans-serif;
+}
+
+.h-font {
+  font: 25pt/25pt sans-serif;
+}
+
+.small-h-font {
+  font: 18pt/18pt sans-serif;
+}
+
+.text-font {
+  font: 1.2em "Fira Sans", sans-serif;
+}
