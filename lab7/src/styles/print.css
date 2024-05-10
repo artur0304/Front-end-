@@ -1,0 +1,30 @@
+@media print {
+  .no-print {
+    display: none;
+  }
+  .news-box {
+    border: 1px solid #000000;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+  .small-h-font {
+    font: 18pt/18pt georgia;
+  }
+
+  .p-font {
+    font: 12pt/10pt georgia;
+  }
+
+  .h-font {
+    font: 25pt/25pt georgia;
+  }
+
+  .small-h-font {
+    font: 18pt/18pt georgia;
+  }
+
+  .text-font {
+    font: 1.2em "Fira Sans", georgia;
+  }
+}

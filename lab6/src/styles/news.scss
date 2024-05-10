@@ -1,0 +1,29 @@
+@use "./font-style.scss";
+
+.news-box {
+  border: 1px solid #98cf7e;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 1px rgb(77, 5, 5);
+}
+
+.news-box {
+  h3 {
+    font: 18pt/18pt font-style.$font-style;
+  }
+}
+
+.news-box {
+  p {
+    font: 12pt/10pt font-style.$font-style;
+    margin-bottom: 10px;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+  }
+}
+
+.news-box {
+  a {
+    font: 10pt/8pt font-style.$font-style;
+  }
+}

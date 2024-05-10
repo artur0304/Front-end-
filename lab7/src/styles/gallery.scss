@@ -1,0 +1,29 @@
+@use "./font-style.scss";
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.image-gallery {
+  li {
+    flex-basis: 120px;
+    font: 1em "Fira Sans", font-style.$font-style;
+  }
+}
+
+.image-gallery {
+  ul {
+    list-style-type: none;
+  }
+}
+
+.image-gallery li img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+}

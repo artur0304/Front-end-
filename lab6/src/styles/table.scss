@@ -1,0 +1,15 @@
+@use "./font-style.scss";
+
+td,
+th {
+  border: 1px solid #0e0d0d;
+  text-align: left;
+  padding: 8px;
+  font: 1.1em "Fira Sans", font-style.$font-style;
+}
+
+.borders {
+  border-collapse: collapse;
+  border: 1px solid rgb(0, 0, 0);
+  margin-bottom: 10px;
+}

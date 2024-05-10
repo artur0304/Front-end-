@@ -1,0 +1,17 @@
+@use "./font-style.scss";
+
+.p-font {
+  font: 12pt/10pt font-style.$font-style;
+}
+
+.h-font {
+  font: 25pt/25pt font-style.$font-style;
+}
+
+.small-h-font {
+  font: 18pt/18pt font-style.$font-style;
+}
+
+.text-font {
+  font: 1.2em "Fira Sans", font-style.$font-style;
+}
