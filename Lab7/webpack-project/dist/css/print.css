@@ -1,0 +1,53 @@
+.navbar, .footer {
+    display: none !important;
+}
+
+.container-fluid, .bg-1, .bg-2, .bg-3 {
+    background: none !important;
+}
+
+body, h1, h2, h3, h4, h5, p {
+    font-family: "Times New Roman", Georgia, Palatino, serif !important;
+    color: black !important;
+}
+
+body {
+    margin: 50px !important;
+}
+
+/* Замінюємо посилання на URL */
+a {
+    color: black !important; /* Зберігаємо колір тексту, який встановлений в батьківському елементі */
+    text-decoration: none !important; /* Прибираємо підкреслення */
+    transition: color 0.3s ease; /* Плавний перехід коліру тексту */
+}
+
+a:hover {
+    color: #333 !important; /* Змінюємо колір тексту при наведенні на посилання */
+}
+
+a::after {
+    content: " [" attr(href) "]"; /* Виводимо URL в квадратних дужках після посилань */
+}
+
+/* Збільшуємо розмір шрифтів при ширині вікна браузера більше 768px */
+@media (min-width: 768px) {
+    body, h1, h2, h3, h4, h5, p {
+        font-size: 18px !important;
+    }
+}
+
+/* Стилі для кнопок */
+.btn {
+    color: white !important; /* Змінюємо колір тексту кнопок на білий */
+    background-color: #007bff !important; /* Задаємо фоновий колір кнопок */
+    border: none !important; /* Видаляємо рамку кнопок */
+    padding: 10px 20px !important; /* Встановлюємо відступи в кнопках */
+    border-radius: 5px !important; /* Закруглюємо кути кнопок */
+    text-transform: uppercase !important; /* Переводимо текст кнопок у верхній регістр */
+    transition: background-color 0.3s ease; /* Плавний перехід фонового кольору */
+}
+
+.btn:hover {
+    background-color: #0056b3 !important; /* Змінюємо фоновий колір кнопок при наведенні */
+}

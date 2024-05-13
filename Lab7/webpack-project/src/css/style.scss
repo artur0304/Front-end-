@@ -1,0 +1,90 @@
+@import 'normalize.css';
+
+$primary-color: #49C514;
+$secondary-color: #4C8434;
+$tertiary-color: #226A04;
+$accent-color: #88EB5D;
+$highlight-color:  #AFEB95;
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, $highlight-color, $accent-color, $primary-color, $secondary-color, $tertiary-color);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  
+  @media (min-width: 768px) { // медіа-запит для перетворення фіксованої ширини виводу контенту на відносну 90%
+    width: 90%;
+  }
+}
+
+.navbar {
+  background-color: $tertiary-color;
+  a {
+    color: #ffffff;
+  }
+  
+  @media (max-width: 768px) { // медіа-запит для перетворення горизонтального головного меню на вертикальне
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+
+.bg-1 {
+  background-color: $primary-color;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.bg-2 {
+  background-color: $secondary-color;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bg-3 {
+  background-color: $tertiary-color;
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.rozklad {
+  background-color: linear-gradient(to bottom, $highlight-color, $accent-color, $primary-color, $secondary-color, $tertiary-color);
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card {
+  background-color: $accent-color;
+  margin-bottom: 20px;
+  &-text {
+    color: #ffffff;
+  }
+  &-date,
+  &-title,
+  .btn {
+    color: #ffffff;
+  }
+}
+
+.btn-primary {
+  background-color: $tertiary-color;
+  border-color: $tertiary-color;
+  &:hover {
+    background-color: $highlight-color;
+    border-color: $highlight-color;
+  }
+}
+
+.table {
+  background-color: white;
+}
