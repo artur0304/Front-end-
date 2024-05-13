@@ -7,6 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   mode: "development",
   entry: {
+    style: path.resolve(__dirname, "./src/css/style.less"),
     index: path.resolve(__dirname, "./src/index.js"),
   },
   output: {
@@ -16,8 +17,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/, // изменение расширения файла
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"], // замена less-loader на sass-loader
+        test: /\.less$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "less-loader"],
       },
     ],
   },
@@ -52,14 +53,14 @@ module.exports = {
           to: path.resolve(__dirname, "dist/assets/images"),
         },
         {
-          from: path.resolve(__dirname, "src/css/style.scss"), // изменение пути к файлу
+          from: path.resolve(__dirname, "src/css/style.less"),
           to: path.resolve(__dirname, "dist/css"),
         },
       ],
     }),
     new MiniCssExtractPlugin({
-      filename: "css/style.css", // изменение имени файла
-      chunkFilename: "css/[id].css", // изменение имени файла
+      filename: "css/style.css", // Обновлено
+      chunkFilename: "css/[id].css",
     }),
   ],
 };

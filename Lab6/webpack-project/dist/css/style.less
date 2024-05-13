@@ -1,14 +1,14 @@
 @import 'normalize.css';
 
-$primary-color: #49C514;
-$secondary-color: #4C8434;
-$tertiary-color: #226A04;
-$accent-color: #88EB5D;
-$highlight-color:  #AFEB95;
+@primary-color: #49C514;
+@secondary-color: #4C8434;
+@tertiary-color: #226A04;
+@accent-color: #88EB5D;
+@highlight-color:  #AFEB95;
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, $highlight-color, $accent-color, $primary-color, $secondary-color, $tertiary-color);
+  background: linear-gradient(to bottom, @highlight-color, @accent-color, @primary-color, @secondary-color, @tertiary-color);
 }
 
 .container {
@@ -18,42 +18,42 @@ body {
 }
 
 .navbar {
-  background-color: $tertiary-color;
+  background-color: @tertiary-color;
   a {
     color: #ffffff;
   }
 }
 
 .bg-1 {
-  background-color: $primary-color;
+  background-color: @primary-color;
   color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .bg-2 {
-  background-color: $secondary-color;
+  background-color: @secondary-color;
   color: #ffffff;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .bg-3 {
-  background-color: $tertiary-color;
+  background-color: @tertiary-color;
   color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .rozklad {
-  background-color: linear-gradient(to bottom, $highlight-color, $accent-color, $primary-color, $secondary-color, $tertiary-color);
+  background-color: linear-gradient(to bottom, @highlight-color, @accent-color, @primary-color, @secondary-color, @tertiary-color);
   color: #ffffff;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .card {
-  background-color: $accent-color;
+  background-color: @accent-color;
   margin-bottom: 20px;
   &-text {
     color: #ffffff;
@@ -66,11 +66,11 @@ body {
 }
 
 .btn-primary {
-  background-color: $tertiary-color;
-  border-color: $tertiary-color;
+  background-color: @tertiary-color;
+  border-color: @tertiary-color;
   &:hover {
-    background-color: $highlight-color;
-    border-color: $highlight-color;
+    background-color: @highlight-color;
+    border-color: @highlight-color;
   }
 }
 
