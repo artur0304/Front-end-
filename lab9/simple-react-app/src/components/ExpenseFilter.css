@@ -1,0 +1,15 @@
+.expenses-filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expenses-filter__label {
+    font-weight: bold;
+}
+
+.expenses-filter__select {
+    padding: 0.5rem 2rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    border: 0px;
+}
