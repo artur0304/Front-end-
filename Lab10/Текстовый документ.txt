@@ -1,0 +1,9 @@
+firebase.initializeApp({
+    apiKey: "AIzaSyBZ2zl4LdAJi9RtOcuXq9pMeF9JLR_LOCk",
+    authDomain: "lab10-80118.firebaseapp.com",
+    projectId: "lab10-80118",
+    storageBucket: "lab10-80118.appspot.com",
+    messagingSenderId: "672470618768",
+    appId: "1:672470618768:web:a06e9ab3a6b71e574cfe15",
+    measurementId: "G-KZPPR23KYD"
+});
